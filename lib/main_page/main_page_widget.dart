@@ -341,7 +341,7 @@ class _MainPageWidgetState extends State<MainPageWidget> {
                                         ),
                                       ),
                                       Text(
-                                        'Form Barang Masuk',
+                                        'Form Timbangan',
                                         textAlign: TextAlign.center,
                                         style: FlutterFlowTheme.of(context)
                                             .titleSmall
@@ -413,7 +413,7 @@ class _MainPageWidgetState extends State<MainPageWidget> {
                                         ),
                                       ),
                                       Text(
-                                        'Table View Barang Masuk',
+                                        'Table View Timbangan',
                                         textAlign: TextAlign.center,
                                         style: FlutterFlowTheme.of(context)
                                             .titleSmall

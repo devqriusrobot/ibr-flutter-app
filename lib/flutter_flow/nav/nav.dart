@@ -33,12 +33,12 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       navigatorKey: appNavigatorKey,
-      errorBuilder: (context, state) => FormPackagingWidget(),
+      errorBuilder: (context, state) => MainPageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
-          builder: (context, _) => FormPackagingWidget(),
+          builder: (context, _) => MainPageWidget(),
         ),
         FFRoute(
           name: LoginPageWidget.routeName,
@@ -54,6 +54,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: FormPackagingWidget.routeName,
           path: FormPackagingWidget.routePath,
           builder: (context, params) => FormPackagingWidget(),
+        ),
+        FFRoute(
+          name: FormTimbanganWidget.routeName,
+          path: FormTimbanganWidget.routePath,
+          builder: (context, params) => FormTimbanganWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
